@@ -1,0 +1,314 @@
+nav{
+
+	  width: 100%;
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+	  padding: 10px 0;
+}
+
+nav ul{
+
+	  list-style: none;
+	  width: 100 %;
+	  text-align: right;
+	  padding-right: 60px;
+}
+
+nav ul li{
+
+	    display: inline-block;
+	    margin: 10px 20px;
+}
+
+a{
+    position: relative;
+    display:block;
+    padding: 4px 0;
+    font-family: Lato, sans-serif;
+    color:#2f3030;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:transform 0.5s;
+}
+
+::after{
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:transform 0.5s;
+}
+a:hover{
+    color: #95a5a6;
+}
+
+a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+button {
+
+	   display: flex;
+	   align-items: center;
+	   padding: 10px 20px;
+	   border: 30%;
+	   outline: 2;
+	   border-radius: 5px;
+	   margin-right: 30px;
+}
+
+img{
+
+	   margin-top:-8px;
+}
+
+.demo.container{
+    width: 90%;
+    margin: 50px auto;
+    padding: 12px;
+    /* justify-content: space-between; */
+    display:flex;
+    margin-left: 50%;    
+    
+    
+}
+.row{
+    display:flex;;
+   flex-direction: row;
+    flex-flow:wrap;
+     margin-left: 220px;
+    
+ }
+
+
+.card
+{
+     position:relative;
+    width: 310px;
+    height: 430px;
+      display:flex; 
+    justify-content:center;
+    align-items: center;
+     flex-direction: column;
+    background: #fff;
+    box-shadow: 0 30px 60px rgba(0,0,0,.2);
+    border-radius: 5%;
+    box-sizing: border-box;
+    margin: 15px;
+    text-align: left;
+    
+}
+
+.card .card-body{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.card .card-body svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    
+}
+.card .card-body svg circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    stroke-linecap:round;
+
+}
+.card .card-body svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke:#03a9f4;
+}
+
+.card .card-body svg circle:nth-child(2){
+    stroke-dashoffset:calc(400-(400*20)/100);
+    stroke: #03a9f4;
+}
+.card .card-body .num{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+}
+.card .card-body .num h2{
+
+    font-size: 48px;
+    margin-top: -180px;
+}
+
+.card .card-body .num h2 span{
+
+    font-size: 24px;
+    
+}
+
+.card .text{
+    padding: -50px ;
+    color: #999;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: -155px; 
+}
+.card h4{
+    margin-bottom: 100px;
+}
+.card ul{
+    
+    list-style-type:NONE;
+    margin: 0;
+    padding: 0;
+    /* border: 1px dotted; */
+     display:flex;
+     box-sizing: content-box;
+     flex-wrap: wrap;
+     justify-content:flex-start;
+     margin-left: 10PX;
+
+     
+    
+}
+.card li{
+    border: 1px solid black;
+    margin: 0.10em;
+    padding: 0.4em;
+    margin-left: 20px;
+    
+}
+
+
+.card li span{
+
+    font-weight: bold;
+}
+.card p{
+
+    margin-right:160px ;
+    margin-bottom: 10px;
+    font-weight:lighter;
+    color: #999;
+   
+    
+
+
+}
+li:nth-of-type(2){
+
+    color:#03a9f4;
+}
+.card:hover{
+    transform:scale(1.01);
+    box-shadow:  0 0 40px -10px rgba(0,0,0,0.25);
+    transition:ease-in-out;
+}
+
+#op{
+       margin-top: 05%;
+       margin-left: 21%;
+}
+#po{
+
+    margin-left: 10px;
+}
+
+h1{
+
+    margin-left: 20%;
+    font-weight: bolder;
+    font-size: 42px;
+}
+
+middle p{
+
+        margin-left: 4%;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration-line:underline;
+}
+middle ul{
+
+           margin-left: 7%;
+           font-size: 20px; 
+}
+
+
+.box h1 {
+
+       margin-left: 28%;
+}
+
+.box h1:hover{
+
+    color: green;
+}
+
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 0px;
+  margin-left: 8%;
+
+}
+.column p{
+
+        margin-left: -75px;
+}
+
+
+.column h4{
+
+        margin-left: -40px;
+}
+
+last p{
+
+         font-size: 15px;
+         width: 75%;
+         margin-left: 15%;
+         color: white;
+         margin-top: 40px;
+}
+
+last  {   
+
+         display:flex;
+          background-color: black;
+          /*padding: 1rem;
+          
+*/
+}
+
+#container {
+
+
+
+          margin-top: 4%;
+          margin-left: 1%;
+}
+
+/*last ul {
+    padding: 1;
+
+     background-color: black;
+
+}*/
